@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 html body{
 	width: 100%;
+	font-family: Roboto, sans-serif;
 }
 header{
 	width: 100%;
@@ -42,9 +43,8 @@ header{
 .menu__item1, .menu__item2, .menu__item3{
 	flex:0 1 auto;
 }
-.menu__item1, .menu__item3{
-	flex-basis:50%ж
-}
+
+
 .menu__btn{
 	min-width: 300px;
 	max-height: 70px;
@@ -81,6 +81,18 @@ header{
 	/*padding: 20px 30px 0px 0px;*/
 	line-height: 25px;
 }
+.btn__connect{
+	min-width: 150px;
+	min-height: 25px;
+	font-family: 24px;
+	background-color: yellow;
+	border: 1px solid yellow;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 25px;
+	/*margin-top: -50px;
+	margin-bottom: 65px;*/
+}
 
 @media (max-width:980px){
 	.menu__btn{
@@ -89,7 +101,7 @@ header{
 		margin-bottom: 65px;
 	}
 	.block__contacts__item p a{
-		font-size: 1em;
+		font-size: 30px;
 		margin-bottom: 65px;
 		text-align: center;
 	}
@@ -110,5 +122,13 @@ header{
 	}
 	.menu__item3{
 		order: 1;
+	}
+	.btn__connect{
+		min-width: 200px;
+		min-height: 70px;
+		font-size: 30px;
+		line-height: 70px;
+		margin-top: -50px;
+		margin-bottom: 65px;
 	}
 }
