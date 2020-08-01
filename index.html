@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
+	<script src ="js/script_tel-connect.js"></script>
 </head>
 <body>
 	<header>
@@ -28,8 +29,36 @@
 						<div class="block__contacts__item">
 							<p><a href="#">tel. +7 (000)000-00-00</a></p>
 							<a href="#">
-								<div class="btn__connect">Для связи</div>
+								<div id="btnModal" class="btn__connect">Для связи</div>
 							</a>
+							<div class="modal__window-connect" id="Modal">
+								<form action="#" method="post" name="telConnect" onsubmit="submit()">
+									<div class="text-form"><br>
+										<span>Введите номер Вашего телефона</span><br><br>
+										<span>Наши менеджеры перезвонят Вам</span><br><br>
+										<span>В течении 30 минут</span><br><br>
+									</div>
+									<div class="inp">
+										<input type="tel" name="tel" placeholder="tel">
+									</div><br><br>
+									<div class="btn__submit"><a href="#"><button>отправить</button></a></div>
+								</form>
+							</div>
+	<script>
+		let popup = document.getElementById("Modal"),
+			 popupToggle = document.getElementById("btnModal");
+
+			 popupToggle.onClick = function () {
+			 popup.style.display = "block";
+}
+
+			 window.onClick = function (event) {
+			if (event.target == popup) {
+			popup.style.display = "none";
+	}
+}
+		header("Location: index.html"); exit();
+	</script>
 						</div>
 					</div>
 				</div>
@@ -37,5 +66,11 @@
 			</div>
 		</div>
 	</header>
+	<section class="m-p__section__level">
+		<div class="container">
+			<div class="offer__title"><p class="title">Качественный ремонт</p><p class="title"> и</p><p class="title"> строительство</p></div>	
+			<div class="bg__offer"><img src="images/landing-page-stroyka.png" alt=""></div>
+		</div>
+	</section>
 </body>
 </html>
